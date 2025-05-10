@@ -4,7 +4,7 @@ using namespace std;
 /*
     Friend Function in C++:
     - A friend function is a function that is not a member of a class but has access to its private and protected members.
-    - It is declared inside the class with the `friend` keyword.
+    - A friend function is declared inside the class using the friend keyword, but its definition is always written outside the class.
     - A friend function can be a global function, a member function of another class, or a function template.
     - Even though it is not a member of the class, it can access all private and protected data members of that class.
     - Friend functions can be used when you need a function to perform operations on a class's data but don't want to make it a member of the class.
@@ -24,7 +24,7 @@ public:
     friend void displayDimensions(Box b);
 };
 
-// Friend function definition
+// Friend function definition 
 void displayDimensions(Box b) {
     // Friend function can access private members of Box class
     cout << "Length: " << b.length << endl;
